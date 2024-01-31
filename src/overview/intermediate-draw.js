@@ -547,7 +547,7 @@ const drawIntermediateLayer = (curLayerIndex, leftX, rightX, rightStart,
       .attr('class', `kernel kernel-${ni}`)
       .attr('transform', `translate(${kernelRectX}, ${n.y})`);
 
-    let weightText = 'Kernel weights: [';
+    let weightText = 'Kernel 权重: [';
     let f2 = d3.format('.2f');
     for (let r = 0; r < kernelMatrix.length; r++) {
       for (let c = 0; c < kernelMatrix[0].length; c++) {
@@ -746,7 +746,7 @@ const drawIntermediateLayer = (curLayerIndex, leftX, rightX, rightStart,
     .style('dominant-baseline', 'middle')
     .style('font-weight', 800)
     .style('opacity', '0.8')
-    .text('intermediate');
+    .text('中间结果');
   
   intermediateLayer.append('g')
     .attr('class', 'animation-control')
@@ -779,7 +779,7 @@ const drawIntermediateLayer = (curLayerIndex, leftX, rightX, rightStart,
     .style('opacity', '0.7')
     .style('font-weight', 800)
     .append('tspan')
-    .text('intermediate')
+    .text('中间结果')
     .append('tspan')
     .style('font-size', '8px')
     .style('font-weight', 'normal')
@@ -900,13 +900,13 @@ const drawIntermediateLayerAnnotation = (arg) => {
   
   slideText.append('tspan')
     .style('dominant-baseline', 'hanging')
-    .text('Slide kernel over input channel');
+    .text('在输入通道上滑动 kernel');
 
   slideText.append('tspan')
     .attr('x', sliderX)
     .attr('dy', '1em')
     .style('dominant-baseline', 'hanging')
-    .text('to get intermediate result');
+    .text('来得到中间结果');
 
   // slideText.append('tspan')
   //   .attr('x', sliderX)
@@ -919,12 +919,12 @@ const drawIntermediateLayerAnnotation = (arg) => {
     .attr('dy', '1.2em')
     .style('dominant-baseline', 'hanging')
     .style('font-weight', 700)
-    .text('Click ');
+    .text('点击');
   
   slideText.append('tspan')
     .style('dominant-baseline', 'hanging')
     .style('font-weight', 400)
-    .text('to learn more')
+    .text('查看详细')
 
   drawArrow({
     group: group,
@@ -947,25 +947,25 @@ const drawIntermediateLayerAnnotation = (arg) => {
 
   slideText2.append('tspan')
     .style('dominant-baseline', 'hanging')
-    .text('Each input chanel');
+    .text('每一个输入通道');
 
   slideText2.append('tspan')
     .attr('x', sliderX)
     .attr('dy', '1em')
     .style('dominant-baseline', 'hanging')
-    .text('gets a different kernel');
+    .text('都有一个不同的 kernel');
 
   slideText2.append('tspan')
     .attr('x', sliderX)
     .attr('dy', '1.3em')
     .style('font-weight', 700)
     .style('dominant-baseline', 'hanging')
-    .text('Hover over ');
+    .text('悬停 ');
 
   slideText2.append('tspan')
     .style('font-weight', 400)
     .style('dominant-baseline', 'hanging')
-    .text('to see value!')
+    .text('查看结果')
 
   drawArrow({
     group: group,
@@ -1006,13 +1006,13 @@ const drawIntermediateLayerAnnotation = (arg) => {
   
   plusText.append('tspan')
     .style('dominant-baseline', 'hanging')
-    .text('Add up all intermediate');
+    .text('对所有中间结果求和');
   
   plusText.append('tspan')
     .attr('x', textX)
     .attr('dy', '1em')
     .style('dominant-baseline', 'hanging')
-    .text('results and then add bias');
+    .text('结果和偏置(bias)');
   
   if (i === 9) {
     drawArrow({
@@ -1051,7 +1051,7 @@ const drawIntermediateLayerAnnotation = (arg) => {
     .attr('y', biasTextY)
     .style('text-anchor', 'middle')
     .style('dominant-baseline', i === 0 ? 'hanging' : 'baseline')
-    .text('Bias');
+    .text('偏置');
 }
 
 /**

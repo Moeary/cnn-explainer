@@ -16,7 +16,6 @@
   import PoolView from '../detail-view/Poolview.svelte';
   import SoftmaxView from '../detail-view/Softmaxview.svelte';
   import Modal from './Modal.svelte'
-  import Article from '../article/Article.svelte';
 
   // Overview functions
   import { loadTrainedModel, constructCNN } from '../utils/cnn-tf.js';
@@ -1572,7 +1571,6 @@
   </div>
 </div>
 
-<Article/>
 
 <div id='detailview'>
   {#if selectedNode.data && selectedNode.data.type === 'conv' && selectedNodeIndex != -1}

@@ -99,7 +99,7 @@
       <div class="control-pannel">
 
         <div class="title-text">
-          ReLU Activation
+          ReLU 激活函数
         </div>
 
         <div class="buttons">

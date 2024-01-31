@@ -159,7 +159,7 @@
       <div class="control-pannel">
       
         <div class="title-text">
-          Max Pooling
+          最大池化
         </div>
 
         <div class="buttons">
