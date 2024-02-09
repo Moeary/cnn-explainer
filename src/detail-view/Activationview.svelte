@@ -130,7 +130,7 @@
       <div class="annotation">
         <img src='PUBLIC_URL/assets/img/pointer.svg' alt='pointer icon'>
         <div class="annotation-text">
-          <span style="font-weight:600">Hover over</span> the matrices to change pixel.
+          <span style="font-weight:600">将鼠标悬停在矩阵上以改变像素。</span>
         </div>
       </div>
 

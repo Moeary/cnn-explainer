@@ -464,11 +464,11 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
     layerGroup.selectAll('g.node-output')
       .on('mouseover', (d, i, g) => {
         nodeMouseOverHandler(d, i, g);
-        hoverInfoStore.set( {show: true, text: `Output value: ${formater(d.output)}`} );
+        hoverInfoStore.set( {show: true, text: `输出值: ${formater(d.output)}`} );
       })
       .on('mouseleave', (d, i, g) => {
         nodeMouseLeaveHandler(d, i, g);
-        hoverInfoStore.set( {show: false, text: `Output value: ${formater(d.output)}`} );
+        hoverInfoStore.set( {show: false, text: `输出值: ${formater(d.output)}`} );
       });
     
     if (curLayer[0].layerName !== 'output') {
@@ -626,7 +626,7 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
     });
   
   labels.append('title')
-    .text('Move to article section');
+    .text('移动到文章部分');
   
   labels.append('text')
     .style('dominant-baseline', 'middle')
@@ -690,11 +690,11 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
   redChannel.append('tspan')
     .style('dominant-baseline', 'hanging')
     .style('fill', '#C95E67')
-    .text('Red');
+    .text('红色');
   
   redChannel.append('tspan')
     .style('dominant-baseline', 'hanging')
-    .text(' channel');
+    .text('通道');
 
   inputAnnotation.append('text')
     .attr('x', nodeCoordinate[0][1].x + nodeLength / 2)
@@ -703,7 +703,7 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
     .style('dominant-baseline', 'hanging')
     .style('text-anchor', 'middle')
     .style('fill', '#3DB665')
-    .text('Green');
+    .text('绿色');
 
   inputAnnotation.append('text')
     .attr('x', nodeCoordinate[0][2].x + nodeLength / 2)
@@ -712,7 +712,7 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
     .style('dominant-baseline', 'hanging')
     .style('text-anchor', 'middle')
     .style('fill', '#3F7FBC')
-    .text('Blue');
+    .text('蓝色');
 }
 
 /**

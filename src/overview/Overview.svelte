@@ -1542,7 +1542,7 @@
           <i class="fas fa-eye"></i>
         </span>
         <span id="hover-label-text">
-          Show detail
+          显示细节
         </span>
       </button>
 
@@ -1555,9 +1555,9 @@
         <div class="select">
           <select bind:value={selectedScaleLevel} id="level-select"
             disabled={disableControl}>
-            <option value="local">Unit</option>
-            <option value="module">Module</option>
-            <option value="global">Global</option>
+            <option value="local">单元</option>
+            <option value="module">模块</option>
+            <option value="global">全局</option>
           </select>
         </div>
       </div>
