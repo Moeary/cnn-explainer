@@ -75,25 +75,14 @@
 
 			<g filter="url(#chalk-texture)" transform="translate(0, 35)">
 				<text id="svg-logo-tagline">
-					AI LAB : Learn Cnn
+					AI LAB : Learn CNN
 				</text>
 			</g>
 		</svg>
   </div>
 
 	<div class="icons">
-	
-		<div class="icon" title="Research paper">
-			<a target="_blank" href="https://arxiv.org/abs/2004.15004">
-				<img src="PUBLIC_URL/assets/img/pdf.png" alt="pdf icon"/>
-			</a>
-		</div>
-
-		<div class="icon" title="Demo video">
-			<a target="_blank" href="https://youtu.be/HnWIHWFbuUQ">
-				<img src="PUBLIC_URL/assets/img/youtube.png" alt="youtube icon"/>
-			</a>
-		</div>
+		
 
 		<div class="icon" title="Open-source code">
 			<a target="_blank" href="https://github.com/poloclub/cnn-explainer">

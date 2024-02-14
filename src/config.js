@@ -27,6 +27,6 @@ export const overviewConfig = {
   kernelRectLength: 8/3,
   gapRatio: 4,
   overlayRectOffset: 12,
-  classLists: ['lifeboat', 'ladybug', 'pizza', 'bell pepper', 'school bus',
-    'koala', 'espresso', 'red panda', 'orange', 'sport car']
+  classLists: ['救生艇', '瓢虫', '披萨', '甜椒', '校车',
+    '考拉', '浓缩咖啡', '小熊猫', '橙子', '跑车']
 };

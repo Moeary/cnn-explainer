@@ -268,7 +268,7 @@
     </div>
 
     <div class="title-text">
-      Softmax Score for <i>"{outputName}"</i>
+      <i>"{outputName}"的Softmax得分</i>
     </div>
 
     <svg id="softmax-svg" width="470" height="105"/>
@@ -276,7 +276,7 @@
     <div class="annotation">
       <img src='PUBLIC_URL/assets/img/pointer.svg' alt='pointer icon'>
       <div class="annotation-text">
-        <span style="font-weight:600">Hover over</span> the numbers to highlight logit circles.
+        <span style="font-weight:600">将鼠标悬停在矩阵上以改变kernel位置</span>
       </div>
     </div>
 
